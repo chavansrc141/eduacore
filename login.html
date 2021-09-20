@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>eduacore</title>
+
+
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="getcookiedata()">
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div>
+                <div>
+                    <a href="index.html"><img src="img/logo.png" alt="" /></a>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Courses</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="allcourses.html">All Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Course</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Course</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary mr-1">
+                        <i class="fa fa-align-left" style="font-size:20px"></i>
+                        <span>Menu</span>
+                    </button>
+                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto mr-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button> -->
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary d-inline-block dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Username
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button"><a href="profile.html">My Profile</a></button>
+                            <button class="dropdown-item" type="button"><a href="mycourses.html">My Courses</a></button>
+                            <button class="dropdown-item" type="button"><a href="login.html">Log in</a></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <form class="form-inline active-cyan-4">
+                    <input class="form-control form-control-sm mr-3 w-75" type="text"
+                        placeholder="What do you want to learn?" aria-label="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+            </div>
+
+            <br>
+
+
+            <div class="stylelogin">
+                <div id="login">
+                    <div class="container">
+                        <div id="login-row" class="row justify-content-center align-items-center">
+                            <div id="login-column" class="col-md-6">
+                                <div id="login-box" class="col-md-12">
+                                    <form id="login-form" class="form" action="" method="post">
+                                        
+                                        <h3 class="text-center text-info">Login</h3>
+                                        <div class="form-group">
+                                            <label for="username" class="text-info">Username:</label><br>
+                                            <input type="text" name="username" id="username" placeholder="Enter Username" required class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="text-info">Password:</label><br>
+                                            <input type="password" name="password" id="password" placeholder="Enter Password" required class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="remember-me" class="text-info"><span>Remember
+                                                    me</span> <span><input id="remember-me" name="remember-me"
+                                                        type="checkbox" onclick="setcookie()"></span></label><br>
+                                            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+                                            <br>
+                                            <a href="#" class="text-info">Forgot password?</a>
+                                            <hr>
+                                        </div>
+                                        
+                                        <div>
+                                            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <!-- Inline Javascript -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+    <!-- External Javascript -->
+    <script src="js/remember_me.js"></script>
+</body>
+
+</html>

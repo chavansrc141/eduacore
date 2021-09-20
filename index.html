@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>eduacore</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div>
+                <div>
+                    <a href="index.html"><img src="img/logo.png" alt="" /></a>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html" >Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Courses</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="allcourses.html">All Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Course</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Course</a>
+                        </li>
+                    </ul>
+                </li>
+              
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary mr-1">
+                        <i class="fa fa-align-left" style="font-size:20px"></i>
+                        <span>Menu</span>
+                    </button>
+                   
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary d-inline-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Username
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><a href="profile.html">My Profile</a></button>
+                          <button class="dropdown-item" type="button"><a href="mycourses.html">My Courses</a></button>
+                          <button class="dropdown-item" type="button"><a href="login.html">Log in</a></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <form class="form-inline active-cyan-4">
+                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="What do you want to learn?"
+                      aria-label="Search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+            </div>
+
+            <br>
+
+            
+              
+
+            <h2>Learn With Freedom</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h2>A Board Selection of Courses</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h2>Expand Your Career Opportunities</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Inline Javascript -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
